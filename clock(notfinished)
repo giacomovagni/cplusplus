@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    
+    char yn;
+    
+    cout << "Minutes in Hours [type H] or Hours in Minutes [type M]: ";
+    cin >> yn;
+    
+    if(yn != 'H' || yn != 'M' ){
+        cout << "Wrong Input" << endl;
+    }
+        
+    if(yn == 'M'){
+       
+        int minutes;
+        int hours;
+        int min;
+        
+        cout << "Enter time in minutes: ";
+        cin >> minutes;
+        
+        hours = minutes / 60;
+        min = minutes % 60;
+        
+        cout << hours << " hours " << min << " minutes " << endl;
+
+    }
+    
+    if(yn == 'M'){
+        
+        int minutes;
+        int hours;
+        int min;
+        
+        cout << "Enter the hour: ";
+        cin >> minutes;
+        
+        hours = minutes / 60;
+        min = minutes % 60;
+        
+        cout << hours << " hours " << min << " minutes " << endl;
+        
+    }
+    
+    
+    return 0;
+        
+}
